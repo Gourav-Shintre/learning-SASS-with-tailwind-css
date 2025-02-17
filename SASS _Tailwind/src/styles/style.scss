@@ -1,0 +1,29 @@
+@import './h1headings';
+$primary-color:black;
+$sceondary-color:yellow;
+$font-color1:yellow;
+$font-color2:black;
+
+body{
+    background-color: rgb(156, 124, 124);
+}
+@mixin color-schema($text,$bg) {
+    background-color: $bg;
+    color: $text;
+    
+}
+.example-1{
+@include color-schema($font-color1,$primary-color );
+   &:hover{
+    background-color:rgb(59, 216, 182);
+
+}
+}
+.example-2{
+    @include color-schema(($font-color2), $secondary-color);
+    &:hover{
+        background-color: aqua;
+
+    }
+
+}

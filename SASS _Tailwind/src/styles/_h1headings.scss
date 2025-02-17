@@ -1,0 +1,14 @@
+$secondary-color:rgb(53, 24, 216);
+$h1-font-family:cursive;
+
+h1{
+    color: $secondary-color;
+    font-family: $h1-font-family;
+    p{
+        color: aquamarine;
+        &:hover{
+            color: brown;
+            cursor: pointer;
+        }
+    }
+}

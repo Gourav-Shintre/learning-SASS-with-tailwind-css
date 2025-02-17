@@ -1,0 +1,16 @@
+$varialble-size:14px;
+$varialble-weight:700;
+$variable-font-famliy:'Courier New', Courier, monospace;
+$varibale-color:black;
+p{
+    font-size: $varialble-size;
+    font-weight: $varialble-weight;
+    font-family: $variable-font-famliy;
+    color: $varibale-color;
+
+    &:hover{
+        cursor: pointer;
+        color: cadetblue;
+    }
+}
+
